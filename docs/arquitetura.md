@@ -1,13 +1,25 @@
 # Arquitetura do Mentor Start
 
-## Versão inicial
+## Versão portátil
 
-O Mentor Start funciona como um conjunto de instruções portáteis para harnesses compatíveis com `AGENTS.md`.
+O Mentor Start funciona em harnesses compatíveis com `AGENTS.md`, usando regras, persona, base local e skills.
+
+## Aplicação funcional
 
 ```text
-Estudante -> Harness de IA -> regras + persona + skill + base -> resposta
+Pergunta no Streamlit
+        |
+        v
+Seleção por palavras-chave em agent/knowledge
+        |
+        v
+AGENTS.md + persona + contexto selecionado + histórico recente
+        |
+        v
+Responses API da OpenAI
+        |
+        v
+Resposta no chat + arquivos consultados
 ```
 
-## Próxima evolução
-
-Uma aplicação em `src/` poderá receber a pergunta, selecionar contexto da base local e enviar esse contexto a um modelo de linguagem.
+A seleção por palavras-chave foi escolhida por ser simples de explicar e suficiente para a base inicial. Uma evolução futura pode usar embeddings e busca vetorial.

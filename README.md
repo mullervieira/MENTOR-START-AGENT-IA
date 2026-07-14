@@ -101,7 +101,7 @@ A base é local e deliberadamente pequena para ser verificável e evoluir com qu
 
 Novos conteúdos devem ser incluídos somente após pesquisa e revisão, mantendo a regra de que o agente não deve afirmar como fato algo que não consegue sustentar.
 
-## Como usar atualmente
+## Como usar
 
 1. Clone o repositório:
 
@@ -109,7 +109,7 @@ Novos conteúdos devem ser incluídos somente após pesquisa e revisão, mantend
    git clone https://github.com/mullervieira/MENTOR-START-AGENT-IA.git
    ```
 
-2. Abra a pasta em um ambiente de IA que suporte instruções de projeto via `AGENTS.md`.
+2. Para usar o agente em um harness, abra a pasta em um ambiente de IA que suporte instruções de projeto via `AGENTS.md`.
 
 3. Faça perguntas em linguagem natural, por exemplo:
 
@@ -125,6 +125,8 @@ Novos conteúdos devem ser incluídos somente após pesquisa e revisão, mantend
    Travei em um exercício com condicionais. Posso mostrar o que tentei?
    ```
 
+3. Para executar a aplicação web independente, siga o guia em [`docs/execucao.md`](docs/execucao.md). Ela usa Streamlit, a Responses API da OpenAI e a base local do projeto.
+
 ## Estado atual e próximos passos
 
 | Etapa | Situação |
@@ -132,11 +134,11 @@ Novos conteúdos devem ser incluídos somente após pesquisa e revisão, mantend
 | Identidade, persona e regras do agente | Concluída |
 | Base inicial de conhecimento | Concluída |
 | Skills pedagógicas | Concluída |
-| Casos de avaliação e métricas | Em preparação |
-| Interface de chat independente | Planejada |
-| Integração com modelo de linguagem e recuperação de contexto | Planejada |
+| Casos de avaliação e métricas | Concluída — versão inicial |
+| Interface de chat independente | Concluída |
+| Integração com modelo de linguagem e recuperação de contexto | Concluída — versão inicial |
 
-A próxima evolução técnica será criar uma interface de chat em `src/`. Ela receberá uma pergunta, selecionará conteúdo relevante da base local e enviará esse contexto a um modelo de IA. A intenção é preservar os mesmos princípios pedagógicos da versão baseada em harness.
+As próximas evoluções técnicas são ampliar a base de conhecimento, adicionar recuperação mais precisa e incorporar pesquisa web com fontes verificáveis para perguntas que dependem de informações atuais.
 
 ## Avaliação da qualidade
 

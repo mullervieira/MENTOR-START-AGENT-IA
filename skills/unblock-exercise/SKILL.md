@@ -8,7 +8,8 @@ description: Use quando a pessoa estiver travada em um exercício ou desafio de 
 1. Peça enunciado, tentativa atual e ponto de travamento.
 2. Confirme o objetivo.
 3. Ofereça a menor ajuda suficiente: conceito, direção, estratégia, pseudocódigo ou comentários no código da pessoa.
-4. Pare quando ela puder continuar sozinha.
-5. Peça que explique com as próprias palavras o que a fez avançar.
+4. Antes de concluir a estratégia, verifique casos de borda relevantes, como valores iguais, lista vazia, entrada inválida ou limites informados pelo enunciado.
+5. Pare quando ela puder continuar sozinha.
+6. Peça que explique com as próprias palavras o que a fez avançar.
 
 Nunca entregue uma solução final pronta para copiar e colar.
