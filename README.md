@@ -1,59 +1,62 @@
 # Mentor Start
 
-> Um agente de IA educacional que orienta pessoas iniciantes em tecnologia com explicações claras, planos de estudo realistas e dicas graduais para exercícios.
+> Um agente de IA educacional que ajuda pessoas iniciantes em tecnologia a entender conceitos, organizar estudos, destravar exercícios e adotar hábitos de cibersegurança defensiva.
 
-> **Diferencial:** o Mentor Start também ensina cibersegurança defensiva desde o início, ajudando a proteger contas, chaves de API, projetos e dados pessoais.
+## Status do projeto
 
-## Sobre o projeto
+O Mentor Start possui documentação, base de conhecimento, skills, testes e uma aplicação web em Streamlit. A integração com a API da OpenAI está implementada; a validação completa de respostas depende de cota disponível na conta da API.
 
-Começar em tecnologia pode ser confuso: há muitas linguagens, ferramentas e trilhas possíveis, enquanto dúvidas básicas frequentemente parecem difíceis de fazer. O **Mentor Start** foi criado para reduzir essa barreira inicial.
+## O problema
 
-Ele atua como um mentor de estudos: adapta a comunicação para iniciantes, explica o raciocínio por trás dos conceitos e incentiva a prática. O objetivo não é apenas dar respostas, mas ajudar a pessoa a ganhar autonomia para continuar aprendendo.
+Começar em tecnologia pode ser confuso: há muitas linguagens, ferramentas e trilhas possíveis, enquanto dúvidas básicas frequentemente parecem difíceis de fazer. Além disso, estudantes iniciantes precisam aprender desde cedo a proteger contas, projetos e credenciais.
 
-Este projeto foi desenvolvido como parte de uma jornada de estudos em agentes de IA e está em evolução contínua.
-
-## Destaque: cibersegurança para iniciantes
-
-Além da orientação de estudos, o Mentor Start ensina práticas defensivas de cibersegurança: proteção de credenciais, uso de `.env` e `.gitignore`, MFA, reconhecimento de phishing, privacidade e cuidados com dependências. O agente não oferece instruções de invasão, fraude ou acesso não autorizado.
+O Mentor Start reduz essa barreira inicial com uma orientação clara, prática e responsável. Ele não tenta substituir o esforço do estudante: ajuda a transformar dúvidas em entendimento, entendimento em prática e prática em autonomia.
 
 ## Para quem é
 
-O Mentor Start foi pensado principalmente para:
-
-- pessoas em seu primeiro contato com programação e tecnologia;
+- Pessoas no primeiro contato com programação e tecnologia;
 - estudantes de bootcamps e cursos introdutórios;
 - pessoas em transição de carreira que precisam de uma direção inicial;
-- quem quer entender conceitos como Git, variáveis, funções e APIs sem excesso de jargão.
+- quem quer aprender com linguagem simples, exemplos pequenos e próximos passos possíveis.
 
 ## O que o agente faz
 
 | Necessidade do estudante | Como o Mentor Start ajuda |
 | --- | --- |
-| "Não entendi esse conceito" | Explica em linguagem simples, com exemplo pequeno e próximo passo prático. |
-| "Por onde começo?" | Organiza uma sequência inicial de estudos de acordo com objetivo, nível e tempo disponível. |
-| "Travei neste exercício" | Oferece dicas graduais para desenvolver o raciocínio sem entregar a solução final. |
-| "Não sei se a informação é confiável" | Usa a base local como referência e reconhece claramente quando ela não é suficiente. |
-| "Posso publicar esta chave no GitHub?" | Ensina práticas defensivas para proteger credenciais, contas e projetos. |
-| "Recebi um link suspeito" | Ajuda a reconhecer phishing e indica ações seguras, sem alarmismo. |
+| "Não entendi esse conceito" | Explica com definição simples, exemplo, confusão comum e prática curta. |
+| "Por onde começo?" | Organiza uma sequência inicial conforme objetivo, nível e tempo disponível. |
+| "Travei neste exercício" | Oferece dicas graduais sem entregar a solução final. |
+| "Posso publicar esta chave no GitHub?" | Ensina `.env`, `.gitignore`, MFA e proteção de credenciais. |
+| "Recebi um link suspeito" | Ajuda a reconhecer phishing e indica ações defensivas. |
+| "Não sei se essa informação está na base" | Reconhece limites e evita inventar fontes ou dados. |
 
-## Princípios do Mentor Start
+## Diferencial: segurança desde o início
 
-- **Aprender antes de responder:** o agente explica o caminho, não apenas o resultado.
-- **Clareza para iniciantes:** termos técnicos são explicados no momento em que aparecem.
-- **Autonomia:** a resposta deve deixar o estudante mais capaz de resolver situações futuras.
-- **Honestidade:** o agente não inventa informações, links ou recursos.
-- **Integridade acadêmica:** não entrega respostas prontas de desafios, provas ou atividades avaliativas.
-- **Segurança desde o início:** orienta práticas defensivas e recusa pedidos de invasão ou acesso não autorizado.
+O Mentor Start trata cibersegurança como parte do aprendizado técnico. Ele orienta práticas defensivas como proteção de chaves de API, MFA, privacidade em repositórios, cuidados com dependências e reconhecimento de phishing.
+
+O agente não fornece instruções de invasão, fraude, roubo de dados ou acesso não autorizado.
+
+## Princípios
+
+- **Aprender antes de responder:** ensina o caminho, não apenas o resultado;
+- **Clareza para iniciantes:** explica termos técnicos quando eles aparecem;
+- **Autonomia:** ajuda a pessoa a conseguir resolver situações futuras;
+- **Honestidade:** reconhece limitações e não inventa informações;
+- **Integridade acadêmica:** não entrega respostas prontas de desafios e avaliações;
+- **Segurança e privacidade:** protege credenciais e orienta apenas práticas defensivas.
 
 ## Como funciona
 
-Nesta primeira versão, o Mentor Start é um agente portátil baseado em arquivos de instrução. Um harness compatível com `AGENTS.md` lê as regras do projeto, a persona, a base de conhecimento e a skill adequada antes de gerar uma resposta.
+O projeto pode ser usado de duas formas:
+
+1. Como agente portátil em um harness que leia `AGENTS.md`;
+2. Como aplicação web independente em Streamlit.
 
 ```text
 Pergunta do estudante
         |
         v
-Harness compatível com AGENTS.md
+Interface ou harness compatível
         |
         +--> Regras do agente (AGENTS.md)
         +--> Persona (agent/persona.md)
@@ -61,66 +64,82 @@ Harness compatível com AGENTS.md
         +--> Skill adequada (skills/)
         |
         v
-Resposta didática + próximo passo prático
+Contexto local + modelo de IA
+        |
+        v
+Resposta didática + próximo passo prático + fontes locais consultadas
 ```
 
-Isso permite usar a mesma definição do agente em diferentes ambientes de IA compatíveis com esse padrão, sem prender o projeto a uma única ferramenta.
+Na aplicação web, uma seleção simples por palavras-chave escolhe os arquivos mais relacionados à pergunta antes de montar o contexto enviado ao modelo.
+
+## Tecnologias e conceitos aplicados
+
+- Python;
+- Streamlit para a interface de chat;
+- OpenAI Responses API para geração de respostas;
+- `python-dotenv` para configuração local segura;
+- Git e GitHub para versionamento;
+- Base de conhecimento em Markdown;
+- Engenharia de prompts, recuperação de contexto, avaliação de agentes e cibersegurança defensiva.
 
 ## Estrutura do repositório
 
 ```text
 MENTOR-START-AGENT-IA/
-├── README.md                 # Visão geral e guia do projeto
-├── AGENTS.md                 # Regras, escopo, limites e tom do agente
+├── README.md
+├── AGENTS.md                    # Regras, escopo, limites e tom do agente
+├── .env.example                 # Modelo de configuração, sem segredo real
+├── .gitignore                   # Protege .env e arquivos locais
+├── requirements.txt             # Dependências Python
 ├── agent/
-│   ├── persona.md            # Personalidade e princípios pedagógicos
-│   └── knowledge/            # Base de conhecimento curada
+│   ├── persona.md               # Postura pedagógica e comunicação
+│   └── knowledge/
 │       ├── fundamentos.md
 │       ├── ferramentas.md
-│       └── trilhas.md
-├── skills/                   # Processos especializados do agente
+│       ├── trilhas.md
+│       └── ciberseguranca.md
+├── skills/
 │   ├── explain-concept/
 │   ├── study-plan/
-│   └── unblock-exercise/
-├── docs/                     # Arquitetura, prompts e avaliação
-└── src/                      # Aplicação web e módulos de contexto
+│   ├── unblock-exercise/
+│   └── security-basics/
+├── docs/
+│   ├── arquitetura.md
+│   ├── execucao.md
+│   ├── metricas.md
+│   ├── pitch.md
+│   └── prompts.md
+├── src/
+│   ├── app.py
+│   ├── knowledge_loader.py
+│   └── prompts.py
+└── tests/
+    ├── casos_avaliacao.md
+    ├── resultados.md
+    └── smoke_test.py
 ```
-
-## Documentação do projeto
-
-| Documento | Conteúdo |
-| --- | --- |
-| [`docs/arquitetura.md`](docs/arquitetura.md) | Camadas, fluxo de dados, privacidade e evoluções técnicas. |
-| [`docs/prompts.md`](docs/prompts.md) | Estratégia de contexto, regras de prompt e cenários de segurança. |
-| [`docs/metricas.md`](docs/metricas.md) | Critérios, escala de notas e processo de avaliação. |
-| [`docs/execucao.md`](docs/execucao.md) | Configuração local, execução, teste e solução de problemas. |
-| [`docs/pitch.md`](docs/pitch.md) | Roteiro de apresentação e demonstração final. |
 
 ## Skills disponíveis
 
-### Explicar conceitos
+| Skill | Finalidade |
+| --- | --- |
+| [`explain-concept`](skills/explain-concept/SKILL.md) | Explicar conceitos, termos e ferramentas de forma progressiva. |
+| [`study-plan`](skills/study-plan/SKILL.md) | Transformar objetivos em planos de estudo realistas. |
+| [`unblock-exercise`](skills/unblock-exercise/SKILL.md) | Destravar exercícios com dicas graduais e casos de borda. |
+| [`security-basics`](skills/security-basics/SKILL.md) | Orientar proteção de contas, projetos, credenciais e privacidade. |
 
-Usada quando o estudante pede ajuda com um termo ou tecnologia. A explicação segue uma sequência: definição simples, exemplo, possível confusão comum e prática sugerida.
+## Base de conhecimento
 
-### Criar plano de estudos
+A base é local, curada e organizada para ser fácil de revisar. Ela abrange:
 
-Usada para transformar um objetivo em uma rotina possível. O agente pergunta o objetivo, o nível atual e o tempo disponível antes de sugerir uma trilha.
-
-### Destravar exercícios
-
-Usada quando há bloqueio em um exercício. O agente aumenta a ajuda gradualmente: conceito, direção, estratégia, pseudocódigo e comentários sobre o código do estudante.
-
-## Base de conhecimento inicial
-
-A base é local e deliberadamente pequena para ser verificável e evoluir com qualidade. Ela já abrange:
-
-- fundamentos de programação: algoritmos, variáveis, condições, repetições e funções;
-- ferramentas iniciais: editor de código, terminal, Git e GitHub;
-- rotas de estudo para fundamentos e desenvolvimento web.
-
-Novos conteúdos devem ser incluídos somente após pesquisa e revisão, mantendo a regra de que o agente não deve afirmar como fato algo que não consegue sustentar.
+- lógica de programação, variáveis, condições, repetições, funções e depuração;
+- editor de código, terminal, Git, GitHub, dependências e ambientes virtuais;
+- trilhas para fundamentos, desenvolvimento web e segurança digital;
+- chaves de API, `.env`, `.gitignore`, MFA, phishing, privacidade e resposta inicial a incidentes.
 
 ## Como usar
+
+### Opção 1 — Harness compatível com `AGENTS.md`
 
 1. Clone o repositório:
 
@@ -128,48 +147,73 @@ Novos conteúdos devem ser incluídos somente após pesquisa e revisão, mantend
    git clone https://github.com/mullervieira/MENTOR-START-AGENT-IA.git
    ```
 
-2. Para usar o agente em um harness, abra a pasta em um ambiente de IA que suporte instruções de projeto via `AGENTS.md`.
-
-3. Faça perguntas em linguagem natural, por exemplo:
+2. Abra a pasta em um ambiente de IA compatível com instruções de projeto;
+3. Faça uma pergunta em linguagem natural, por exemplo:
 
    ```text
    Nunca programei. O que é uma variável?
    ```
 
-   ```text
-   Quero começar a estudar desenvolvimento web e tenho quatro horas por semana.
-   ```
+### Opção 2 — Aplicação web
 
-   ```text
-   Travei em um exercício com condicionais. Posso mostrar o que tentei?
-   ```
+Siga o guia completo em [`docs/execucao.md`](docs/execucao.md). Em resumo:
 
-3. Para executar a aplicação web independente, siga o guia em [`docs/execucao.md`](docs/execucao.md). Ela usa Streamlit, a Responses API da OpenAI e a base local do projeto.
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+Copy-Item .env.example .env
+streamlit run src/app.py
+```
 
-## Estado atual e próximos passos
+Antes de executar, preencha `OPENAI_API_KEY` no arquivo `.env`. Nunca publique essa chave ou envie o arquivo `.env` ao GitHub.
 
-| Etapa | Situação |
+## Avaliação
+
+O projeto possui casos de teste para explicação, plano de estudos, integridade acadêmica, limites da base e cibersegurança.
+
+Os critérios de avaliação são:
+
+- clareza;
+- fidelidade à base;
+- segurança;
+- autonomia;
+- utilidade;
+- segurança defensiva;
+- privacidade.
+
+Consulte [`tests/casos_avaliacao.md`](tests/casos_avaliacao.md), [`tests/resultados.md`](tests/resultados.md) e [`docs/metricas.md`](docs/metricas.md).
+
+## Documentação
+
+| Documento | Conteúdo |
 | --- | --- |
-| Identidade, persona e regras do agente | Concluída |
-| Base inicial de conhecimento | Concluída |
-| Skills pedagógicas | Concluída |
-| Casos de avaliação e métricas | Concluída — versão inicial |
-| Interface de chat independente | Concluída |
-| Integração com modelo de linguagem e recuperação de contexto | Implementada — validação real pendente de cota da API |
+| [`docs/arquitetura.md`](docs/arquitetura.md) | Camadas, fluxo, privacidade, falhas esperadas e evoluções. |
+| [`docs/prompts.md`](docs/prompts.md) | Estratégia de contexto, regras e cenários de segurança. |
+| [`docs/metricas.md`](docs/metricas.md) | Critérios, escala e processo de avaliação. |
+| [`docs/execucao.md`](docs/execucao.md) | Configuração, execução, testes e solução de problemas. |
+| [`docs/pitch.md`](docs/pitch.md) | Roteiro de apresentação de até três minutos. |
 
-As próximas evoluções técnicas são ampliar a base de conhecimento, adicionar recuperação mais precisa e incorporar pesquisa web com fontes verificáveis para perguntas que dependem de informações atuais.
+## Limitações atuais e próximos passos
 
-## Avaliação da qualidade
+- A base ainda cobre um conjunto inicial de temas;
+- a seleção de conhecimento usa palavras-chave, não busca semântica;
+- não há pesquisa web em tempo real;
+- a validação de respostas reais depende de cota disponível na API;
+- não há login, banco de dados ou memória permanente.
 
-O projeto prevê testes com perguntas reais de iniciantes. Cada resposta será avaliada de 1 a 5 nos seguintes critérios:
+Possíveis evoluções: ampliar a base, usar embeddings, adicionar fontes verificáveis para temas atuais, criar feedback por resposta e publicar a aplicação online.
 
-- clareza para o público iniciante;
-- fidelidade à base de conhecimento;
-- segurança ao reconhecer limitações;
-- estímulo à autonomia;
-- utilidade do próximo passo recomendado.
+## Checklist de entrega
 
-Os detalhes estão em [`docs/metricas.md`](docs/metricas.md).
+- [x] Documentação do agente;
+- [x] Base de conhecimento;
+- [x] Prompts e skills;
+- [x] Aplicação funcional estruturada;
+- [x] Métricas e casos de avaliação;
+- [x] Pitch final;
+- [x] Orientação defensiva de cibersegurança;
+- [ ] Executar a validação de respostas reais após habilitar cota na API.
 
 ## Autor
 
