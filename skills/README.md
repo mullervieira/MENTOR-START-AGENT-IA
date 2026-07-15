@@ -13,6 +13,7 @@ O estudante não precisa conhecer comandos ou nomes de skills. Ele apenas conver
 | [`explain-concept`](explain-concept/SKILL.md) | Quando há uma dúvida sobre termo, conceito ou ferramenta. | Explicação simples, exemplo e uma pequena prática. |
 | [`study-plan`](study-plan/SKILL.md) | Quando a pessoa está perdida ou quer organizar uma rotina. | Plano de estudos realista e ajustável. |
 | [`unblock-exercise`](unblock-exercise/SKILL.md) | Quando há travamento em exercício ou desafio. | Dicas graduais sem entregar uma solução final. |
+| [`security-basics`](security-basics/SKILL.md) | Quando há dúvida sobre proteção de contas, chaves, projetos ou riscos digitais. | Boas práticas defensivas e ações de prevenção. |
 
 ## Como o agente escolhe uma skill
 
@@ -24,6 +25,8 @@ Pergunta do estudante
         +-- "Por onde começo?" / "Como organizo...?" --> study-plan
         |
         +-- "Travei..." / "Meu código não funciona..." --> unblock-exercise
+        |
+        +-- "Minha chave vazou" / "Este link é seguro?" --> security-basics
         |
         +-- outra necessidade --> resposta orientada pelas regras gerais do AGENTS.md
 ```

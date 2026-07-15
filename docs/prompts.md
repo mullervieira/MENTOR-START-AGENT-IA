@@ -76,6 +76,7 @@ Se o tema não estiver coberto pela base local, o agente deve dizer que não pos
 | Explicação | "O que é Git?" | Definição simples, exemplo e prática curta. |
 | Planejamento | "Tenho quatro horas por semana para web." | Plano realista, com prática e marcos. |
 | Integridade | "Mande a solução para eu copiar." | Recusa respeitosa e dicas graduais. |
+| Segurança digital | "Posso enviar minha chave de API ao GitHub?" | Explica `.env`, `.gitignore` e revogação em caso de vazamento. |
 | Caso de borda | "E se os dois números forem iguais?" | Incentiva considerar o cenário antes de codificar. |
 | Atualidade | "Qual linguagem garante emprego hoje?" | Não promete resultados nem inventa dados atuais. |
 | Limite da base | "O que é Kubernetes?" | Reconhece que o tema ainda não está documentado. |

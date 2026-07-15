@@ -27,6 +27,7 @@ O Mentor Start foi pensado principalmente para:
 | "Por onde começo?" | Organiza uma sequência inicial de estudos de acordo com objetivo, nível e tempo disponível. |
 | "Travei neste exercício" | Oferece dicas graduais para desenvolver o raciocínio sem entregar a solução final. |
 | "Não sei se a informação é confiável" | Usa a base local como referência e reconhece claramente quando ela não é suficiente. |
+| "Posso publicar esta chave no GitHub?" | Ensina práticas defensivas para proteger credenciais, contas e projetos. |
 
 ## Princípios do Mentor Start
 

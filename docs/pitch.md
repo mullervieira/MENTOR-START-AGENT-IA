@@ -20,11 +20,11 @@
 
 ### Avaliação e diferencial — 35 segundos
 
-"Eu avaliei o agente com casos de explicação, planejamento, exercícios e perguntas fora da base. Os critérios são clareza, fidelidade ao conteúdo, segurança, autonomia e utilidade. O diferencial do Mentor Start não é responder tudo: é reconhecer limites e transformar dúvidas em próximos passos possíveis."
+"Eu avaliei o agente com casos de explicação, planejamento, exercícios, segurança digital e perguntas fora da base. Os critérios são clareza, fidelidade ao conteúdo, segurança, autonomia e utilidade. O diferencial do Mentor Start não é responder tudo: é reconhecer limites e transformar dúvidas em próximos passos possíveis."
 
 ### Encerramento — 20 segundos
 
-"Como evolução, pretendo ampliar a base, melhorar a recuperação de contexto e adicionar pesquisa web com fontes verificáveis. O Mentor Start é um primeiro passo para tornar o início na tecnologia mais acessível e menos solitário."
+"Além de ensinar tecnologia, o Mentor Start também reforça hábitos de cibersegurança, como proteger chaves de API e reconhecer phishing. Como evolução, pretendo ampliar a base, melhorar a recuperação de contexto e adicionar pesquisa web com fontes verificáveis."
 
 ## Demonstração recomendada
 
