@@ -136,7 +136,7 @@ Novos conteúdos devem ser incluídos somente após pesquisa e revisão, mantend
 | Skills pedagógicas | Concluída |
 | Casos de avaliação e métricas | Concluída — versão inicial |
 | Interface de chat independente | Concluída |
-| Integração com modelo de linguagem e recuperação de contexto | Concluída — versão inicial |
+| Integração com modelo de linguagem e recuperação de contexto | Implementada — validação real pendente de cota da API |
 
 As próximas evoluções técnicas são ampliar a base de conhecimento, adicionar recuperação mais precisa e incorporar pesquisa web com fontes verificáveis para perguntas que dependem de informações atuais.
 
