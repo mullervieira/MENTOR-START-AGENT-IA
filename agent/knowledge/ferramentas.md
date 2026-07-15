@@ -37,6 +37,8 @@ GitHub é uma plataforma online para hospedar repositórios Git. Ela permite com
 
 Git e GitHub não são a mesma coisa: Git é a ferramenta de controle de versão; GitHub é um serviço que pode hospedar repositórios Git.
 
+Antes de publicar um repositório, revise se ele contém arquivos de configuração, chaves, dados pessoais, logs ou prints que não deveriam ficar públicos. O arquivo `.gitignore` ajuda a evitar que arquivos locais sensíveis sejam incluídos por acidente.
+
 ## Dependências e gerenciadores de pacotes
 
 Muitos projetos usam código produzido por outras pessoas, chamado de dependências ou bibliotecas. Um gerenciador de pacotes instala e registra essas dependências para o projeto.
@@ -57,3 +59,7 @@ No início, a ideia central é: cada projeto deve conseguir declarar as ferramen
 4. instale apenas o que está documentado;
 5. nunca cole chaves ou senhas em comandos;
 6. execute uma etapa por vez e observe o resultado.
+
+## Organização de um projeto iniciante
+
+Mesmo projetos pequenos ficam mais fáceis de entender quando têm um README, nomes de arquivos claros, dependências registradas e commits descritivos. Essa organização permite que outra pessoa — ou você no futuro — consiga reproduzir o projeto e acompanhar sua evolução.

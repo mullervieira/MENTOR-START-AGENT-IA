@@ -36,12 +36,25 @@ Indicada para quem ainda está explorando áreas e precisa criar uma base sólid
 4. Funções e organização do código.
 5. Exercícios progressivos e um pequeno programa de terminal.
 
+## Trilha: fundamentos de cibersegurança
+
+Indicada para qualquer pessoa que usa contas, repositórios e serviços online durante os estudos.
+
+1. Senhas únicas e gerenciador de senhas;
+2. MFA em e-mail, GitHub e plataformas de desenvolvimento;
+3. Proteção de chaves de API com `.env` e `.gitignore`;
+4. Reconhecimento de phishing e links suspeitos;
+5. Revisão de dados em repositórios, prints e logs antes de publicar.
+
+Essa trilha não ensina invasão ou exploração de sistemas: ela desenvolve hábitos de proteção desde o primeiro projeto.
+
 ## Como transformar uma trilha em plano
 
 - Defina sessões curtas e repetíveis na semana.
 - Alterne aprendizado, prática e revisão.
 - Crie um marco por semana ou quinzena, como concluir um conjunto de exercícios ou publicar uma melhoria no projeto.
 - Revise o plano quando o ritmo não estiver sustentável, em vez de abandonar o estudo.
+- Inclua segurança digital como prática transversal, não como assunto isolado no fim da jornada.
 
 ## Limites desta base
 

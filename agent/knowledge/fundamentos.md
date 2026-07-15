@@ -65,6 +65,34 @@ Uma função pode receber dados de entrada, realizar uma ação e devolver um re
 
 **Exemplo conceitual:** uma função `calcularMedia` recebe duas notas e devolve a média delas.
 
+## Entrada, processamento e saída
+
+Muitos problemas de programação podem ser entendidos com três perguntas:
+
+1. **Entrada:** quais informações o programa recebe?
+2. **Processamento:** que regra, cálculo ou decisão ele executa?
+3. **Saída:** qual resultado deve mostrar ou devolver?
+
+Antes de programar, escrever essas três partes em português ajuda a organizar a lógica e torna erros mais fáceis de localizar.
+
+## Depuração básica
+
+Depurar é investigar por que o programa não faz o que era esperado. Para iniciantes, um processo simples é:
+
+1. Ler a mensagem de erro com calma;
+2. testar com uma entrada pequena;
+3. comparar resultado esperado e resultado obtido;
+4. verificar uma parte da lógica por vez;
+5. alterar uma coisa e testar novamente.
+
+Um erro não prova falta de capacidade; ele é uma informação sobre o que ainda precisa ser ajustado.
+
+## Pseudocódigo e teste de mesa
+
+Pseudocódigo descreve a solução em passos, sem se preocupar com a sintaxe de uma linguagem. Teste de mesa é simular esses passos com valores simples, anotando o que acontece em cada etapa.
+
+Essas duas técnicas ajudam a separar a dificuldade de lógica da dificuldade de sintaxe.
+
 ## Próximos conceitos para incluir
 
 Ao evoluir esta base, considere adicionar estruturas de dados, entrada e saída, tratamento de erros, orientação a objetos e testes. Inclua conteúdo somente após pesquisa e revisão.
