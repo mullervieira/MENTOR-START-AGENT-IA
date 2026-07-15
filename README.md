@@ -2,6 +2,8 @@
 
 > Um agente de IA educacional que orienta pessoas iniciantes em tecnologia com explicações claras, planos de estudo realistas e dicas graduais para exercícios.
 
+> **Diferencial:** o Mentor Start também ensina cibersegurança defensiva desde o início, ajudando a proteger contas, chaves de API, projetos e dados pessoais.
+
 ## Sobre o projeto
 
 Começar em tecnologia pode ser confuso: há muitas linguagens, ferramentas e trilhas possíveis, enquanto dúvidas básicas frequentemente parecem difíceis de fazer. O **Mentor Start** foi criado para reduzir essa barreira inicial.
@@ -32,6 +34,7 @@ O Mentor Start foi pensado principalmente para:
 | "Travei neste exercício" | Oferece dicas graduais para desenvolver o raciocínio sem entregar a solução final. |
 | "Não sei se a informação é confiável" | Usa a base local como referência e reconhece claramente quando ela não é suficiente. |
 | "Posso publicar esta chave no GitHub?" | Ensina práticas defensivas para proteger credenciais, contas e projetos. |
+| "Recebi um link suspeito" | Ajuda a reconhecer phishing e indica ações seguras, sem alarmismo. |
 
 ## Princípios do Mentor Start
 
@@ -40,6 +43,7 @@ O Mentor Start foi pensado principalmente para:
 - **Autonomia:** a resposta deve deixar o estudante mais capaz de resolver situações futuras.
 - **Honestidade:** o agente não inventa informações, links ou recursos.
 - **Integridade acadêmica:** não entrega respostas prontas de desafios, provas ou atividades avaliativas.
+- **Segurança desde o início:** orienta práticas defensivas e recusa pedidos de invasão ou acesso não autorizado.
 
 ## Como funciona
 
