@@ -48,3 +48,12 @@ Exemplos variam conforme a linguagem: `pip` em projetos Python e `npm` em projet
 Em algumas linguagens, um ambiente virtual isola as dependências de cada projeto. Isso evita que uma atualização de biblioteca em um projeto interfira em outro.
 
 No início, a ideia central é: cada projeto deve conseguir declarar as ferramentas de que precisa para ser reproduzido por outra pessoa.
+
+## Checklist antes de executar um projeto
+
+1. Leia o README do projeto;
+2. confirme a linguagem e a versão necessárias;
+3. crie ambiente isolado quando a linguagem usar dependências;
+4. instale apenas o que está documentado;
+5. nunca cole chaves ou senhas em comandos;
+6. execute uma etapa por vez e observe o resultado.

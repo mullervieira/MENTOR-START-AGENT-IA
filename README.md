@@ -83,8 +83,18 @@ MENTOR-START-AGENT-IA/
 │   ├── study-plan/
 │   └── unblock-exercise/
 ├── docs/                     # Arquitetura, prompts e avaliação
-└── src/                      # Reservado para a futura aplicação web
+└── src/                      # Aplicação web e módulos de contexto
 ```
+
+## Documentação do projeto
+
+| Documento | Conteúdo |
+| --- | --- |
+| [`docs/arquitetura.md`](docs/arquitetura.md) | Camadas, fluxo de dados, privacidade e evoluções técnicas. |
+| [`docs/prompts.md`](docs/prompts.md) | Estratégia de contexto, regras de prompt e cenários de segurança. |
+| [`docs/metricas.md`](docs/metricas.md) | Critérios, escala de notas e processo de avaliação. |
+| [`docs/execucao.md`](docs/execucao.md) | Configuração local, execução, teste e solução de problemas. |
+| [`docs/pitch.md`](docs/pitch.md) | Roteiro de apresentação e demonstração final. |
 
 ## Skills disponíveis
 

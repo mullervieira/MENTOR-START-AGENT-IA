@@ -64,6 +64,18 @@ Antes de iniciar, preencha `OPENAI_API_KEY` no arquivo `.env`. A conta também p
 
 Essas limitações são deliberadas no MVP e ajudam a manter a solução simples, verificável e adequada ao objetivo educacional do projeto.
 
+## Validação da aplicação
+
+A estrutura, a leitura da base, a seleção de contexto, a montagem do prompt e a inicialização do Streamlit foram validadas localmente. A chamada real ao modelo depende de uma chave com cota disponível na API. O teste reproduzível está em [`../tests/smoke_test.py`](../tests/smoke_test.py), e os resultados ficam em [`../tests/resultados.md`](../tests/resultados.md).
+
+## Boas práticas para manutenção
+
+- Atualize a base em `agent/knowledge/` antes de alterar o código de recuperação;
+- crie um caso de teste sempre que adicionar uma skill ou um tema novo;
+- nunca inclua `.env` ou credenciais em commits;
+- execute `git status` antes de publicar alterações;
+- revise o README e o pitch quando uma funcionalidade relevante for incluída.
+
 ## Próximas evoluções
 
 - Busca semântica com embeddings;

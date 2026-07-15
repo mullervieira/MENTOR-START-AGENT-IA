@@ -49,6 +49,37 @@ Além do conteúdo de `AGENTS.md`, a aplicação reforça as seguintes instruç�
 - citar os nomes dos arquivos locais consultados;
 - reconhecer quando a base não cobre uma pergunta.
 
+## Decisões de engenharia de prompt
+
+### Separação entre regras e pergunta
+
+As regras do Mentor Start são enviadas como instruções, separadas da pergunta do estudante. Essa separação reduz o risco de uma pergunta tentar mudar a identidade, os limites ou o tom do agente.
+
+### Contexto mínimo e relevante
+
+A aplicação seleciona até dois arquivos de conhecimento. O objetivo é oferecer conteúdo suficiente sem encher o contexto com materiais que não ajudam na resposta atual.
+
+### Fonte consultada visível
+
+O modelo é instruído a informar os nomes dos arquivos locais usados. Isso ajuda o estudante a entender de onde a resposta partiu e facilita a depuração da recuperação de contexto.
+
+### Histórico limitado
+
+A conversa envia somente as seis mensagens mais recentes. Isso mantém continuidade para perguntas de acompanhamento sem aumentar demais o contexto e sem criar memória permanente.
+
+## Hierarquia de decisões
+
+Quando houver conflito entre uma pergunta e as regras, siga esta prioridade:
+
+1. Segurança, privacidade e integridade acadêmica;
+2. Regras de `AGENTS.md`;
+3. Persona do agente;
+4. Conteúdo da base de conhecimento;
+5. Pedido do estudante;
+6. Estilo e formato preferidos pelo estudante.
+
+Por exemplo, mesmo que a pessoa peça uma solução pronta, a regra de preservar a autoria deve prevalecer.
+
 ## Segurança contra respostas inadequadas
 
 ### Atividades avaliativas
@@ -88,3 +119,5 @@ Se o tema não estiver coberto pela base local, o agente deve dizer que não pos
 - Adicionar busca semântica à base de conhecimento;
 - Incluir pesquisa web com fontes verificáveis para assuntos atuais;
 - Medir automaticamente critérios de clareza, segurança e fidelidade à base.
+- Versionar prompts e comparar respostas antes e depois de mudanças relevantes;
+- Criar avaliações específicas para respostas de cibersegurança e privacidade.

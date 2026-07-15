@@ -50,3 +50,7 @@ Este material não determina uma "melhor linguagem" ou uma única carreira ideal
 ## Próximas trilhas a pesquisar
 
 Ao expandir a base, inclua conteúdos revisados sobre back-end, dados, qualidade de software, cloud e inteligência artificial. Cada nova trilha deve indicar público, pré-requisitos, sequência sugerida e um projeto inicial possível.
+
+## Como medir progresso sem se comparar
+
+Progresso inicial pode ser acompanhado por evidências simples: exercícios resolvidos com entendimento, commits feitos, README melhorado, conceito explicado com as próprias palavras e pequenos projetos publicados. A comparação útil é com o próprio ponto de partida, não com o ritmo de outras pessoas.

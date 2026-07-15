@@ -1,39 +1,97 @@
-# Como executar a aplicação
+# Como executar o Mentor Start
 
-## Pré-requisitos
+## O que você precisa
 
-- Python 3.10 ou superior.
-- Uma chave da API da OpenAI.
+- Python 3.10 ou superior;
+- acesso ao terminal na pasta do projeto;
+- uma chave da API da OpenAI com cota disponível;
+- conexão com a internet para a chamada ao modelo.
 
-> Uma assinatura do ChatGPT e o acesso à API são produtos separados. Mantenha sua chave apenas no computador.
+> ChatGPT e a API da OpenAI são serviços separados. Ter uma conta ou assinatura do ChatGPT não garante saldo para uso da API.
 
-## Configuração
+## 1. Abra a pasta do projeto
 
-No terminal, na raiz do repositório:
+No PowerShell, navegue até a pasta onde o repositório foi clonado. Confirme que você vê arquivos como `README.md`, `requirements.txt` e a pasta `src`.
+
+## 2. Crie e ative o ambiente virtual
+
+O ambiente virtual isola as bibliotecas deste projeto das bibliotecas de outros projetos Python.
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+```
+
+Se o comando `python` não for reconhecido, instale o Python e marque a opção para adicioná-lo ao PATH, ou use o launcher `py` caso ele esteja disponível.
+
+## 3. Instale as dependências
+
+```powershell
 pip install -r requirements.txt
+```
+
+As bibliotecas instaladas são Streamlit, SDK da OpenAI e suporte ao arquivo `.env`.
+
+## 4. Configure a chave com segurança
+
+Crie a configuração local:
+
+```powershell
 Copy-Item .env.example .env
 ```
 
-Abra o arquivo `.env` e substitua `sua_chave_aqui` pela sua chave. Não envie esse arquivo ao GitHub; ele está no `.gitignore`.
+Abra `.env` e preencha apenas a linha abaixo com sua chave real:
 
-## Iniciar
+```text
+OPENAI_API_KEY=sua_chave_aqui
+```
+
+Não coloque aspas e não compartilhe a chave em mensagens, prints, commits ou vídeos. O arquivo `.env` já está no `.gitignore`.
+
+## 5. Inicie o chat
 
 ```powershell
 streamlit run src/app.py
 ```
 
-Abra o endereço local mostrado no terminal para conversar com o Mentor Start.
+O terminal mostrará um endereço local, geralmente `http://localhost:8501`. Abra esse endereço no navegador.
 
-Se a aplicação informar que não há cota disponível, verifique o faturamento e os limites da conta na plataforma da OpenAI. Ter uma chave válida não garante, por si só, saldo ou cota de uso para chamadas à API.
+## 6. Execute testes manuais
 
-## Testar
+Comece por três perguntas:
 
-Execute os casos de `tests/casos_avaliacao.md` e preencha `tests/resultados.md`. Para a demonstração, use as perguntas sobre Git/GitHub, plano de estudos e recusa de resposta pronta.
+```text
+O que é Git e GitHub?
+Quero estudar desenvolvimento web quatro horas por semana.
+Posso publicar minha chave de API no GitHub?
+```
 
-## Nota técnica
+Depois, consulte `tests/casos_avaliacao.md` e registre notas em `tests/resultados.md`.
 
-A aplicação usa o SDK oficial da OpenAI e a Responses API. Ela envia as instruções do agente, os arquivos locais relevantes e o histórico recente da conversa ao modelo. O parâmetro `store=False` evita solicitar armazenamento da resposta pela API.
+## Teste reproduzível de integração
+
+Com a chave e a cota configuradas, execute:
+
+```powershell
+.\.venv\Scripts\python.exe tests\smoke_test.py
+```
+
+O script envia três cenários de teste: explicação, plano de estudos e integridade acadêmica.
+
+## Solução de problemas
+
+| Problema | Como resolver |
+| --- | --- |
+| `python` não é reconhecido | Instale o Python ou teste `py --version`. |
+| Erro ao ativar `.venv` | Confirme que você está na raiz do projeto e que o ambiente foi criado. |
+| `ModuleNotFoundError` | Ative `.venv` e execute `pip install -r requirements.txt`. |
+| Chave não encontrada | Confirme que o arquivo se chama `.env` e contém `OPENAI_API_KEY`. |
+| `insufficient_quota` | Revise faturamento e cota da API; uma chave válida não garante saldo. |
+| A resposta não usa a base esperada | Revise palavras da pergunta e os arquivos em `agent/knowledge/`. |
+
+## Segurança antes da demonstração
+
+- Confira `git status` antes de fazer commits;
+- confirme que `.env` não aparece na lista de arquivos;
+- não grave a chave de API em telas ou vídeos;
+- use perguntas sem dados pessoais para demonstrar o agente.
