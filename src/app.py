@@ -4,7 +4,7 @@ from __future__ import annotations
 import os
 import streamlit as st
 from dotenv import load_dotenv
-from openai import OpenAI
+from openai import OpenAI, RateLimitError
 
 from knowledge_loader import load_agent_files, select_knowledge
 from prompts import build_instructions
@@ -65,6 +65,12 @@ def main() -> None:
                 answer, source_names = get_answer(question)
                 st.markdown(answer)
                 st.caption("Arquivos selecionados: " + ", ".join(source_names))
+            except RateLimitError:
+                answer = (
+                    "A conexão com a API funcionou, mas a conta não possui cota disponível no momento. "
+                    "Verifique o faturamento e os limites da sua conta na plataforma da OpenAI antes de tentar novamente."
+                )
+                st.warning(answer)
             except Exception as error:
                 answer = f"Não foi possível gerar a resposta agora. Detalhe: {error}"
                 st.error(answer)

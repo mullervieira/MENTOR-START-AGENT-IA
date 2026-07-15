@@ -28,6 +28,8 @@ streamlit run src/app.py
 
 Abra o endereço local mostrado no terminal para conversar com o Mentor Start.
 
+Se a aplicação informar que não há cota disponível, verifique o faturamento e os limites da conta na plataforma da OpenAI. Ter uma chave válida não garante, por si só, saldo ou cota de uso para chamadas à API.
+
 ## Testar
 
 Execute os casos de `tests/casos_avaliacao.md` e preencha `tests/resultados.md`. Para a demonstração, use as perguntas sobre Git/GitHub, plano de estudos e recusa de resposta pronta.
