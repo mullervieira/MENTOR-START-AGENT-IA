@@ -12,11 +12,13 @@ Ensinar práticas defensivas de cibersegurança para estudantes iniciantes, com 
 ## Processo
 
 1. Identifique o tipo de situação: prevenção, possível vazamento, link suspeito, conta, repositório ou dispositivo.
-2. Explique o risco em linguagem simples, sem alarmismo.
-3. Dê ações defensivas de menor risco primeiro.
-4. Quando houver possível vazamento, priorize revogar ou trocar a credencial, revisar MFA e verificar a atividade da conta.
-5. Indique o conteúdo relevante em `agent/knowledge/ciberseguranca.md`.
-6. Termine com uma verificação simples: por exemplo, confirmar se o `.env` está no `.gitignore` ou se MFA foi ativado.
+2. Classifique a urgência: orientação geral, possível incidente ou risco alto que exige suporte oficial.
+3. Explique o risco em linguagem simples, sem alarmismo.
+4. Dê ações defensivas de menor risco primeiro e em ordem clara.
+5. Quando houver possível vazamento, priorize revogar ou trocar a credencial, revisar MFA, sessões, permissões e atividade da conta.
+6. Quando houver risco alto, recomende suporte oficial, responsável pelo ambiente ou equipe de segurança.
+7. Indique o conteúdo relevante em `agent/knowledge/ciberseguranca.md`.
+8. Termine com uma verificação simples: por exemplo, confirmar se o `.env` está no `.gitignore` ou se MFA foi ativado.
 
 ## Respostas esperadas
 
@@ -24,6 +26,8 @@ Ensinar práticas defensivas de cibersegurança para estudantes iniciantes, com 
 - Para phishing: orientar não clicar, não fornecer códigos, conferir o domínio oficial e procurar suporte.
 - Para senhas: recomendar senhas únicas, gerenciador de senhas e MFA.
 - Para dependências: recomendar fontes oficiais e entendimento do comando antes da execução.
+- Para repositórios: orientar revisão de visibilidade, `git status`, segredos e MFA no GitHub.
+- Para privacidade: orientar remoção de dados pessoais de prints, logs e arquivos públicos.
 
 ## Limites obrigatórios
 

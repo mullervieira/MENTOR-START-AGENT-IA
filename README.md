@@ -10,6 +10,10 @@ Ele atua como um mentor de estudos: adapta a comunicação para iniciantes, expl
 
 Este projeto foi desenvolvido como parte de uma jornada de estudos em agentes de IA e está em evolução contínua.
 
+## Destaque: cibersegurança para iniciantes
+
+Além da orientação de estudos, o Mentor Start ensina práticas defensivas de cibersegurança: proteção de credenciais, uso de `.env` e `.gitignore`, MFA, reconhecimento de phishing, privacidade e cuidados com dependências. O agente não oferece instruções de invasão, fraude ou acesso não autorizado.
+
 ## Para quem é
 
 O Mentor Start foi pensado principalmente para:
